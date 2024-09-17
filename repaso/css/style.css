@@ -1,0 +1,142 @@
+body {
+    line-height: 2;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ccc;
+    color: #333;
+}
+
+header h1 {
+    margin: 0px;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+}
+
+header nav ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+}
+
+@media (min-width: 720px) {
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        border-bottom: none;
+    }
+
+    
+}
+
+aside nav ul {
+    background-color: red;
+}
+
+main {}
+
+.hero-panel {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+}
+.hero-panel img {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.hero-panel h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-panel button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px #333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 27px;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+
+
+.hero-panel button:hover {
+    background-color: aqua;
+}
+
+.cardHolder {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cardHolder .card {
+    max-width: 280px;
+    border: solid 1px #333;
+    box-shadow: 3px 3px 5px #fff;
+}
+
+.cardHolder .card:nth-child(2n) {
+    transform: rotate(25deg);
+}
+
+.cardHolder .card .card-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.cardHolder .card .card-heading {
+    padding: 0.5rem 0.25rem;
+    display: block;
+}
+
+.cardHolder .card .card-content {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 0.5rem;
+}
+
+table {
+    margin: 1rem auto;
+}
+table tr {
+    background-color: #fff;
+    color:#000;
+}
+table tr:nth-child(2n) {
+    background-color: #444;
+    color:#fff;
+}
