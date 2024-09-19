@@ -1,0 +1,102 @@
+/* mobile first */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+header {
+    position:relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
+header .hamburger {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:64px;
+    height:64px;
+    padding:1rem 0.5rem;
+}
+
+header .hamburger div {
+    background-color: #000;
+    border-radius: 3px;
+    height: 5px;
+    width: 80%;
+}
+
+header nav {
+    position: absolute;
+    top: 100%;
+    width:100%;
+    background-color: #fff;
+    z-index: 99;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+    list-style: none;
+}
+
+header nav ul li a{
+    display: block;
+    padding:0.5rem 1rem;
+    border-bottom: 1px solid  #333;
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media (min-width: 768px) {
+    /* Reglas para tabletas* */
+    body {
+        
+    }
+    header {
+        justify-content: space-between;
+        padding:0.5rem 1rem;
+        box-shadow: 0px 3px 5px #000;
+    }
+    header .hamburger{
+        display: none;
+    }
+    header nav{
+        position: relative;
+        width: auto;
+    }
+    header nav ul {
+        flex-direction: row;
+    }
+    header nav ul li a{
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* reglas para escritorio */
+    body {
+        
+    }
+}
+
+@media (min-width: 2560px) {
+    body {
+        
+    }
+}
