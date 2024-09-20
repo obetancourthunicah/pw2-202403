@@ -30,6 +30,7 @@ header .hamburger {
     width:64px;
     height:64px;
     padding:1rem 0.5rem;
+    transition: transform 0.5s ease-in-out;
 }
 
 header .hamburger div {
@@ -45,6 +46,9 @@ header nav {
     width:100%;
     background-color: #fff;
     z-index: 99;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
 }
 
 header nav ul {
@@ -60,6 +64,16 @@ header nav ul li a{
     border-bottom: 1px solid  #333;
     text-decoration: none;
     color: #000;
+}
+main {
+    padding:1rem;
+}
+
+.hidden {
+    height: 0px;
+}
+.rotate {
+    transform: rotate(90deg);
 }
 
 
